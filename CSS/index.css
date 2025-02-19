@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     background-color: black;
+    font-family: 'Comfortaa';
 }
 
 header {
@@ -82,4 +83,65 @@ header {
     color: black; /* Change to black for visibility */
     background-color: white;
     font-size: 2.5vh; /* Adjust size */
+}
+
+/*Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+body {
+    display: block; /* Removes centering behavior */
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 80px auto; /* Pushes gallery below navbar */
+}
+
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    position: relative;
+    margin: 10px;
+    transition: all 700ms ease-in;
+}
+
+.panel h1{
+    font-size: 35px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h1{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px){
+    .container {
+        width: 100vw;
+        transition: opacity 0.3s ease-in 0.4s;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
 }
