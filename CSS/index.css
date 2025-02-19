@@ -1,5 +1,7 @@
 /*navbar styling-----navbar styling-----navbar styling-----navbar styling-----navbar styling-----navbar styling-----navbar styling-----navbar styling-----*/
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,8 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 7vh;
+    font-family: 'Comfortaa';
+    font-size: 1vh;
 }
 
 .navbar {
@@ -87,8 +91,6 @@ header {
 
 /*Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----*/
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,500;1,500&display=swap');
-
 body {
     display: block; /* Removes centering behavior */
     overflow-x: hidden;
@@ -99,7 +101,7 @@ body {
     display: flex;
     justify-content: center;
     width: 90vw;
-    margin: 80px auto; /* Pushes gallery below navbar */
+    margin: 30px auto; /* Pushes gallery below navbar */
 }
 
 .panel{
@@ -123,6 +125,7 @@ body {
     left: 20px;
     margin: 0;
     opacity: 0;
+    background: none;
 }
 
 .panel.active{
