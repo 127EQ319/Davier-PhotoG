@@ -1,0 +1,96 @@
+/*navbar styling-----navbar styling-----navbar styling-----navbar styling-----navbar styling-----navbar styling-----navbar styling-----navbar styling-----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Comfortaa';
+}
+
+.information-section{
+    margin: 3rem 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.information-section h3{
+    color: white;
+    padding-top: 2rem;
+    text-align: justify;
+ 
+}
+
+.information-section p{
+ color:white;
+ text-align: justify;
+ font-size: 14px;
+ padding-top: 2rem;
+ line-height: 1.2rem;
+ margin-right: 2rem;
+}
+
+/* Gallery Section */
+
+.vertical-gallery {
+    text-align: right;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Make the gallery vertical */
+    align-items: center; /* Center panels */
+    width: 40vw; /* Adjust width */
+    margin-right: 2rem;
+    margin-left: 4rem;
+    padding-top: 3rem;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; /* Full width */
+    height: 12vh; /* Adjust height for vertical layout */
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0; /* Vertical spacing */
+    transition: all 700ms ease-in;
+}
+
+.panel h1 {
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    background: none;
+}
+
+.panel.active {
+    height: 60vh; /* Expand height instead of width */
+}
+
+.panel.active h1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+        transition: opacity 0.3s ease-in 0.4s;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
