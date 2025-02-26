@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <script src="https://kit.fontawesome.com/7ab8e51c05.js" crossorigin="anonymous"></script>
+    <title>Gallery</title>
+</head>
+<!--NavBar Section-->
+<header>
+    <nav class="navbar">
+        <button><img src="IMG/logo.png" alt="logo" class="logo"></button>
+        <ul class="nav-links">
+            <li><a href="index.html">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="plans.html">PLANS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="white-square1">
+            <button><i class="fa-solid fa-compress"></i></button>
+        </div>
+        <div class="white-square2">
+            <button><i class="fa-solid fa-bars"></i></button>`
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <input type="hidden" name="access_key" value="848b4993-a791-4ecd-9ce7-aaeb025a29ed">
+            <div class="contact-left-title">
+                <h2>Contact Us</h2>
+                <hr>
+
+            </div>
+            <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+            <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+            <button type="submit" class="contact-button">Send</button>
+
+        </form>
+        
+        <div class="icon-links">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+        </div>
+
+    <script src="JS/fullscreen-script.js"></script>
+    <script src="JS/hamburger-nav.js"></script>
+</body>
+</html>
