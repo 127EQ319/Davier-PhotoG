@@ -1,0 +1,64 @@
+/*Footer Section-----Footer Section-----Footer Section-----Footer Section-----Footer Section-----Footer Section-----Footer Section-----Footer Section-----*/
+
+footer {
+    background-color: black;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Comfortaa';
+    color: white;
+    margin: 5vw;
+}
+
+
+.left-footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#phone:hover, #email:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+p, ul {
+    font-size: 16px;
+    list-style: none;
+}
+
+.footer-nav-links li {
+    margin: 5px 0;
+    text-align: right;;
+}
+
+.footer-nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-links a:hover {
+    color: grey;
+    font-size: 16.5px;
+    cursor: pointer;
+}
+
+.footer-icon-links a {
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-icon-links a:hover {
+    color: grey;
+    cursor: pointer;
+}
