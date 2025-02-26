@@ -48,9 +48,13 @@
 <script>
     function checkViewport() {
         if (window.innerWidth <= 768) {
-            window.location.href = "phone-message.html";
+            if (window.location.href.indexOf("phone-message.html") === -1) {
+                window.location.href = "phone-message.html";
+            }
         } else {
-            window.location.href = "index.html";
+            if (window.location.href.indexOf("index.html") === -1) {
+                window.location.href = "index.html";
+            }
         }
     }
     window.onload = checkViewport;
