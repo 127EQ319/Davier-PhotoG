@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport Check</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+        body {
+            display: none;
+            text-align: center;
+            background-color: black;
+            font-family: 'Comfortaa';
+        }
+        #phone-message {
+            display: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+            margin: 20% 20%;
+            line-height: 2;
+        }
+    </style>
+    <script>
+        function checkViewport() {
+            if (window.innerWidth <= 768) {
+                document.body.style.display = "block";
+                document.getElementById("phone-message").style.display = "block";
+            }
+        }
+        window.onload = checkViewport;
+    </script>
+</head>
+<body>
+    <div id="phone-message">Este Website no esta disponible para movil solamente en computadora</div>
+</body>
+</html>
