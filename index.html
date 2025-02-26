@@ -45,6 +45,17 @@
     <script src="JS/Gallery-Dynamic.js"></script>
 
 <!--Script Section-->
+<script>
+    function checkViewport() {
+        if (window.innerWidth <= 768) {
+            window.location.href = "phone-message.html";
+        } else {
+            window.location.href = "index.html";
+        }
+    }
+    window.onload = checkViewport;
+</script>
+
     <script src="JS/fullscreen-script.js"></script>
     <script src="JS/hamburger-nav.js"></script>
 </body>
