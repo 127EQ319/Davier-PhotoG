@@ -9,85 +9,6 @@
     font-family: 'Comfortaa';
 }
 
-header {
-    background-color: black;
-    border-bottom: 1px solid grey;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 7vh;
-    font-family: 'Comfortaa';
-    font-size: 1vh;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.navbar img {
-    height: 7vh;
-    width: 7vh;
-    border: none;
-}
-
-.nav-links {
-    font-family: Consolas;
-    color: white;
-    display: flex;
-    list-style: none;
-    padding: 0;
-    gap: 60px;
-    width: 100%;
-    justify-content: center; /* Centers the links */
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-links a:hover {
-    color: grey;
-}
-
-.white-square1 {
-    width: 8vh;
-    height: 7vh;   
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid grey;;
-}
-
-.white-square2 {
-    width: 8vh;
-    height: 7vh;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.white-square1 button, .white-square2 button {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.fa-bars {
-    color: black; /* Change to black for visibility */
-    background-color: white;
-    font-size: 2.5vh; /* Adjust size */
-}
-
-.fa-compress {
-    color: black; /* Change to black for visibility */
-    background-color: white;
-    font-size: 2.5vh; /* Adjust size */
-}
 
 /*Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----Gallery Section-----*/
 
@@ -101,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
     width: 90vw;
+    padding-top: 1rem;
     margin: 30px auto; /* Pushes gallery below navbar */
 }
 
@@ -119,7 +41,7 @@ body {
 }
 
 .panel h1{
-    font-size: 35px;
+    font-size: 50px;
     position: absolute;
     bottom: 20px;
     left: 20px;
